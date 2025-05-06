@@ -6,3 +6,6 @@ dist/
 .DS_Store
 
 .parcel-cache
+
+.env
+.env.local

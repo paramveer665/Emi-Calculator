@@ -11,7 +11,7 @@ const useExchangeRates = (baseCurrency) => {
     setError(null);
     try {
       const response = await axios.get(
-        `https://v6.exchangerate-api.com/v6/57b6968a9c2324251424c181/latest/${baseCurrency}`
+        `https://v6.exchangerate-api.com/v6/${process.env.EXCHANGE_RATE_API_KEY}/latest/${baseCurrency}`
       );
       if (response.data.result === "success") {
         setRates(response.data.conversion_rates);
