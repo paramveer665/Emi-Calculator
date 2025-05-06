@@ -10,6 +10,7 @@ import ExchangeRateTable from "../components/ExchangeRateTable";
 const Home = () => {
   return (
     <>
+      <Header />
       <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
         <Box sx={{ display: "flex", flexDirection: "column", gap: 3 }}>
           <LoanForm />

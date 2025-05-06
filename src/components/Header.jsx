@@ -5,7 +5,6 @@ import {
   Toolbar,
   Typography,
   IconButton,
-  Switch,
   Box,
   Menu,
   MenuItem,
@@ -45,7 +44,7 @@ const Header = () => {
   ];
 
   return (
-    <AppBar position="static">
+    <AppBar position="fixed">
       <Toolbar>
         {isMobile && (
           <IconButton
@@ -80,12 +79,6 @@ const Header = () => {
             <IconButton onClick={toggleTheme} color="inherit">
               {darkMode ? <Brightness7Icon /> : <Brightness4Icon />}
             </IconButton>
-            <Switch
-              checked={darkMode}
-              onChange={toggleTheme}
-              color="default"
-              inputProps={{ "aria-label": "toggle dark mode" }}
-            />
           </Box>
         ) : (
           <>
