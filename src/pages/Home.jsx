@@ -5,6 +5,7 @@ import Results from "../components/Results";
 import AmortizationTable from "../components/AmortizationTable";
 import CurrencyConverter from "../components/CurrencyConverter";
 import { Box, Container } from "@mui/material";
+import ExchangeRateTable from "../components/ExchangeRateTable";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
           <LoanForm />
           <Results />
           <CurrencyConverter />
+          <ExchangeRateTable />
           <AmortizationTable />
         </Box>
       </Container>
